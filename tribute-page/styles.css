@@ -1,0 +1,47 @@
+body {
+  background-color: #718da5;
+  text-align: center;
+}
+
+#main {
+  margin: 20px auto;
+  width: 80%;
+  border: 0px solid;
+  background: #ffeaaa;
+  border-radius: 5px;
+}
+#title {
+  text-align: center;
+}
+#title > h1 {
+  color: #803515;
+  margin-top: 50px;
+}
+
+#title > h3 {
+  color: #551900;
+  margin-top: -20px;
+}
+
+img {
+  /* must respond to the width of its parent element and centered */
+
+  margin: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+#tribute-info {
+  width: 80%;
+  margin: auto;
+  background-color: #ffc3aa;
+  text-align: justify;
+  padding: 10px 30px 10px 0px;
+}
+#tribute-info > ul > li {
+  margin-top: 10px;
+}
+#tribute-info > h3,
+p {
+  text-align: center;
+}
