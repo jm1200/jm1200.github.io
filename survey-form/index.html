@@ -6,12 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <script src="main.js"></script>
 </head>
 
 <body>
-    <h1>Survey Form</h1>
+    <h1 id="title">Experimenting with Forms</h1>
+    <div class="main">
+        <p id="description">My goal is to experiment with creating different form inputs and layouts</p>
+        <form action="" id="survey-form">
+            <div class="inputs">
+                <div class="name flex-item">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" placeholder="Samantha" required>
+                </div>
+
+                <div class="email flex-item">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" placeholder="name@domain.com" required>
+                </div>
+
+                <div class="number flex-item">
+                    <label for="number" id="number-label">Number:</label>
+                    <input type="number" min="0" max="100" id="number" placeholder="enter a number between 0 and 100" required>
+                </div>
+
+                <div class="dropdown">
+                    <label for="dropdown">Choose one in the dropdown: </label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="radio">
+                    <fieldset>
+                        <legend>Choose one of the following:</legend>
+                        <label for="one"><input type="radio" name="radio-item" value="1" id="one">Option 1</label>
+                        <label for="two"><input type="radio" name="radio-item" value="2" id="two">Option 2</label>
+                        <label for="three"><input type="radio" name="radio-item" value="3" id="three">Option 3</label>
+                    </fieldset>
+                </div>
+                <div class="checkbox">
+                    <fieldset>
+                        <legend>Choose one or more of the following:</legend>
+                        <label for="one"><input type="checkbox" name="checkbox-item" value="1" id="one">Option 1</label>
+                        <label for="two"><input type="checkbox" name="checkbox-item" value="2" id="two">Option 2</label>
+                        <label for="three"><input type="checkbox" name="checkbox-item" value="3" id="three">Option 3</label>
+                    </fieldset>
+                </div>
+                <div class="textarea">
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Additional comments?"></textarea>
+                </div>
+            </div>
+
+
+            <button type="submit" id="submit">Submit!</button>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
