@@ -13,7 +13,8 @@
 <body>
     <h1 id="title">Experimenting with Forms</h1>
     <div class="main">
-        <p id="description">My goal is to experiment with creating different form inputs and layouts</p>
+        <p id="description">Played around with form layout, flexbox and @media queries. Play around with the size and see
+            how it looks!</p>
         <form action="" id="survey-form">
             <div class="inputs">
                 <div class="name flex-item">
@@ -39,29 +40,43 @@
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <div class="radio">
-                    <fieldset>
-                        <legend>Choose one of the following:</legend>
-                        <label for="one"><input type="radio" name="radio-item" value="1" id="one">Option 1</label>
-                        <label for="two"><input type="radio" name="radio-item" value="2" id="two">Option 2</label>
-                        <label for="three"><input type="radio" name="radio-item" value="3" id="three">Option 3</label>
-                    </fieldset>
+                <div class="radio-checkbox">
+                    <div class="radio">
+                        <fieldset>
+                            <legend>Choose one of the following:</legend>
+                            <div class="radio-div">
+                                <label for="one"><input type="radio" name="radio-item" value="1" id="one">Option 1</label>
+                                <label for="two"><input type="radio" name="radio-item" value="2" id="two">Option 2</label>
+                                <label for="three"><input type="radio" name="radio-item" value="3" id="three">Option 3</label>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                    <div class="checkbox">
+                        <fieldset>
+                            <legend>Choose one or more of the following:</legend>
+                            <div class="checkbox-div">
+                                <label for="one"><input type="checkbox" name="checkbox-item" value="1" id="one">Option 1</label>
+                                <label for="two"><input type="checkbox" name="checkbox-item" value="2" id="two">Option 2</label>
+                                <label for="three"><input type="checkbox" name="checkbox-item" value="3" id="three">Option
+                                    3
+                                </label>
+                            </div>
+
+                        </fieldset>
+                    </div>
                 </div>
-                <div class="checkbox">
-                    <fieldset>
-                        <legend>Choose one or more of the following:</legend>
-                        <label for="one"><input type="checkbox" name="checkbox-item" value="1" id="one">Option 1</label>
-                        <label for="two"><input type="checkbox" name="checkbox-item" value="2" id="two">Option 2</label>
-                        <label for="three"><input type="checkbox" name="checkbox-item" value="3" id="three">Option 3</label>
-                    </fieldset>
-                </div>
+
                 <div class="textarea">
+                    <label for="textarea">Comments</label>
                     <textarea name="" id="textarea" cols="30" rows="10" placeholder="Additional comments?"></textarea>
                 </div>
             </div>
 
+            <div class="button">
+                <button type="submit" id="submit">Submit!</button>
+            </div>
 
-            <button type="submit" id="submit">Submit!</button>
         </form>
 
     </div>
