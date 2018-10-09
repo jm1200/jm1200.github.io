@@ -1,1 +1,329 @@
 /* navbar is fixed to the top */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b4b7bc;
+}
+#nav-bar {
+  background-color: #030c1f;
+  height: 70px;
+}
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-bar-container > * {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-left {
+}
+.nav-right {
+  justify-content: flex-end;
+  height: 100%;
+}
+.logo {
+  margin: 10px 10px 10px 0px;
+  background-color: white;
+  border: 0px solid white;
+  border-radius: 5px;
+  text-align: center;
+  width: 20%;
+}
+.site-name {
+  color: #b4b7bc;
+  margin-left: 20px;
+}
+
+#header-img {
+  width: 50px;
+}
+
+#nav-links {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#nav-link {
+  list-style: none;
+  margin: auto 10px;
+  color: #b4b7bc;
+  height: 80%;
+  width: 100px;
+  background-color: #676c79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+.banner {
+  background-color: white;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/blurbanner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+input {
+  border: 2px solid grey;
+  margin: auto 10px;
+  width: 100%;
+}
+.banner > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  font-weight: lighter;
+}
+
+.icon-img {
+  width: 200px;
+}
+.icons-container {
+  width: 60%;
+  margin: 20px auto;
+}
+.row {
+  display: flex;
+  /* width: 100%; */
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px auto;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.description {
+  margin-left: 30px;
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ideas-container {
+  width: 70%;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ideas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ideas-container > h3 {
+  text-align: center;
+}
+.ideas-grid > * {
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-img {
+  width: 280px;
+}
+.grid-img-desc {
+  text-align: center;
+}
+
+.order-container {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 40px;
+  height: 500px;
+}
+
+.order-container > h3 {
+  margin-bottom: 20px;
+}
+.order-container > form > .form {
+  display: flex;
+}
+.email {
+  display: flex;
+  align-items: center;
+
+  width: 60%;
+  justify-content: flex-end;
+}
+
+.email > label {
+  width: 40%;
+  text-align: right;
+}
+.email > input {
+  width: 20%;
+  height: 20px;
+  border-radius: 3px;
+}
+#submit {
+  width: 70px;
+  color: white;
+  font-weight: bold;
+  background-color: #676c79;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: center;
+  left: center;
+  width: 40%;
+  height: 40%;
+}
+
+@media (max-width: 672px) {
+  .icons-container > .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    text-align: center;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  #nav-bar {
+    width: 100%;
+    height: auto;
+  }
+  .nav-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: auto;
+  }
+
+  .nav-bar-container > * {
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    width: 90%;
+  }
+
+  #nav-links {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    width: 90%;
+  }
+  #nav-link {
+    margin: 5px auto;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/blurbanner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .order-container > form > .form {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .email > label {
+    text-align: left;
+    width: 100%;
+  }
+  .email > input {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  #submit {
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+    background-color: #676c79;
+    border-radius: 5px;
+    height: 30px;
+  }
+  .video iframe,
+  .video object,
+  .video embed {
+    position: absolute;
+    top: center;
+    left: center;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -81,6 +81,10 @@ textarea {
   background-color: beige;
 }
 
+input:invalid {
+  background-color: pink;
+}
+
 @media (max-width: 444px) {
   .inputs > * {
     width: 80%;
