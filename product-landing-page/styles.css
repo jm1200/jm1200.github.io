@@ -10,6 +10,8 @@ body {
 #nav-bar {
   background-color: #030c1f;
   height: 70px;
+  position: fixed;
+  width: 100%;
 }
 .nav-bar-container {
   display: flex;
@@ -59,7 +61,7 @@ li {
   display: flex;
   align-items: center;
 }
-#nav-link {
+.nav-link {
   list-style: none;
   margin: auto 10px;
   color: #b4b7bc;
@@ -154,13 +156,12 @@ input {
 }
 
 .order-container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   background-color: white;
   border-radius: 5px;
   text-align: center;
   padding: 40px;
-  height: 500px;
 }
 
 .order-container > h3 {

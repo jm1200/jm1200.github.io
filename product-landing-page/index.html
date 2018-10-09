@@ -22,9 +22,9 @@
                 </div>
                 <div class="nav-right">
                     <ul id="nav-links">
-                        <li> <a href="#video" id="nav-link">Video</a> </li></button>
-                        <li><a href="#video" id="nav-link">Styles and Sizes</a></li>
-                        <li><a href="#video" id="nav-link">Ideas</a></li>
+                        <li> <a href="#video1" class="nav-link">Video</a> </li></button>
+                        <li><a href="#icons" class="nav-link">Styles and Sizes</a></li>
+                        <li><a href="#ideas" class="nav-link">Ideas</a></li>
                         <!-- todo link to spots in page -->
                     </ul>
                 </div>
@@ -35,7 +35,7 @@
         <div class="banner">
             <h1>Accessories by Elton Sung</h1>
         </div>
-        <div class="icons-container">
+        <div id="icons" class="icons-container">
             <div class="row">
                 <div class="img">
                     <img src="./img/bagsytles.jpg" class="icon-img" alt="">
@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <div class="ideas-container">
+        <div id="ideas" class="ideas-container">
 
             <h3>Different Ideas</h3>
 
@@ -104,22 +104,22 @@
 
         <div class="order-container">
             <h3>Place your order today!</h3>
-            <form action="https://www.freecodecamp.com/email-submit">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <div class="form">
                     <div class="email">
                         <label for="email">Email address:</label>
-                        <input id="email" required type="email" placeholder="sam@yahoo.com">
+                        <input id="email" name="email" required type="email" placeholder="sam@yahoo.com">
                     </div>
 
                     <div class="submit-button">
-                        <button type="submit" id="submit">Submit</button>
+                        <input id="submit" type="submit" value="submit" class="btn">
                     </div>
 
                 </div>
 
             </form>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/79DijItQXMM" frameborder="0" allow="autoplay; encrypted-media"
+            <div id="video1" class="video">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/79DijItQXMM" frameborder="0" allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>
             </div>
 
