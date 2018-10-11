@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkolivegreen;
+}
+#main-doc {
+  width: 100%;
+}
+#navbar {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+#navbar > header {
+  margin: 30px auto;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+#navbar > a {
+  height: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  margin: 5px 5px;
+  background-color: grey;
+  border-radius: 2px;
+}
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+header,
+.sub-section > p {
+  margin-left: 15px;
+}
+
+.main-section > p {
+  margin-left: 10px;
+}
+.sections {
+  margin: 0px 0px 15px 305px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  background-color: rgb(233, 233, 225);
+}
+.sections > * {
+  margin: 15px 0;
+  padding: 10px 0;
+  background-color: rgb(233, 231, 231);
+  border: 2px solid lightgray;
+}
+.sub-section {
+  background-color: #d6e2e6;
+  padding: 5px 0px;
+  margin: 10px auto;
+}
+pre {
+  margin: 10px auto;
+  background-color: lightgrey;
+  width: 70%;
+  border-radius: 5px;
+  /* height: 20px; */
+}
+
+ul {
+  margin: 10px 0px 10px 40px;
+}
+
+@media (max-width: 810px) {
+  #main-doc {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar {
+    position: relative;
+    width: 100%;
+  }
+  .sections {
+    margin: 0px;
+    width: 100%;
+  }
+}
